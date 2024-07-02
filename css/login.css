@@ -1,0 +1,61 @@
+body {
+    background-color: #f1f1f1;
+}
+
+.login-form{
+    max-width: 450px;
+    margin:5px auto;
+}
+
+.card{
+    max-width: 450px;
+    margin:60px auto;
+}
+
+.login-form .form-group{
+    position: relative;
+    margin-bottom:20px;
+}
+
+.login-form .form-group i{
+    float: left;
+    position: relative;
+    height: 0;
+    left: 10px;
+    top: -30px;
+    color: #787676;
+} 
+
+.login-form .submit-custom{
+    position: relative;
+}
+
+.login-form .submit-custom i{
+    float: left;
+    position: relative;
+    height: 0;
+    left: 276px;
+    top: -30px;
+    color: #ede4e4;
+}
+
+.login-form .form-group input{
+
+    padding-left: 30px;
+    margin-bottom:5px;
+}
+
+.login-form .astrisc {
+    color: rgb(192, 67, 67);
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    font-size: 22px;
+
+}
+
+.login-form .custom-alert{
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    display: none;
+}
