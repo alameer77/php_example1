@@ -38,6 +38,12 @@ if(isset($_POST['save'])) {
             $sql = "INSERT INTO users (firstname,lastname,username,email,pasword,birthday) VALUES ('$firstname','$lastname','$username','$email','$password','$date')";
             mysqli_query($conn,$sql);
             echo "<div class='alert alert-danger text-center'>تم اضافة سجل جديد بنجاح</div>";
+            $firstname = '';
+            $lastname = '';
+            $username = '';
+            $email = '';
+            $password = '';
+            $date = '';
             
         } else {
             echo "<div class='alert alert-danger text-center'>خطأ في اضافة سجل جديد</div>";
@@ -63,9 +69,9 @@ if(isset($_POST['save'])) {
         $formerrors[] = 'Username Must be larger than <strong> 3 </strong> characters';
       }
 
-      if (strlen($password) < 10) {
+      if (strlen($password) < 5) {
 
-        $formerrors[] = 'Password Must be larger than <strong> 10 </strong> characters';
+        $formerrors[] = 'Password Must be larger than <strong> 5 </strong> characters';
       }
    // } 
 }
@@ -146,7 +152,7 @@ if(isset($_POST['save'])) {
                         <span class="astrisc">*</span>
 
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <select class="form-control pl-4" name="gender" value="<?php if (isset($gender)) {
                                                                                     echo $gender;
                                                                                 } ?>">
@@ -155,11 +161,11 @@ if(isset($_POST['save'])) {
 
                         </select>
                         <i class="fa fa-male" aria-hidden="true"></i>
-                        <!-- <span class="astrisc">*</span> -->
-                    </div>
+                        <span class="astrisc">*</span>
+                    </div> -->
 
                     <div class="form-group">
-
+                        <label for="">Birthday :</label>
                         <input type="date" name="birthday" class="birthday form-control" placeholder="Birthday" aria-describedby="helpId" value="<?php if (isset($date)) {
                                                                                                                                                         echo $date;
                                                                                                                                                     } ?>">

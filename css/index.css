@@ -7,13 +7,18 @@
 body{
     background-color: rgb(244, 244, 239);
 }
-.container-fluid .custom-jumb{
+.container-fluid .custom-jumb {
    
     background-image: url("../image/1.jpg"); 
     background-repeat: no-repeat;
     background-size: cover;
+    height:300px;
+    max-width: 100%;
 }
 
-.card-deck .custom-card{
+.card-deck .custom-card:hover{
+    transform: scale(1.1);
+    z-index: 2;
+
 
 }
