@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(244, 244, 239);
+}
+.container-fluid .custom-jumb{
+   
+    background-image: url("../image/1.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-deck .custom-card{
+
+}

@@ -27,6 +27,7 @@ if (isset($_SESSION['user'])) {
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>index</title>
 </head>
 
@@ -99,8 +100,8 @@ if (isset($_SESSION['user'])) {
     <!-- start main secsion -->
     <main>
         <!-- start jumbotron -->
-        <div class="container-fluid mt-2">
-            <div class="jumbotron" style="background-image: url('image/tree-736881_640.jpg'); background-size:cover; background-repeat:no-repeat;">
+        <div class="container-fluid mt-2 shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="jumbotron custom-jumb" >
                 <h1 class="display-4 text-white">Hello, world!</h1>
                 <p class="lead text-white">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                 <hr class="my-4">
@@ -116,8 +117,8 @@ if (isset($_SESSION['user'])) {
 
 
             <div class="card-deck">
-                <div class="card">
-                    <img src="image/tree-736881_640.jpg" class="card-img-top" alt="...">
+                <div class="card shadow p-3 mb-5 bg-body-tertiary rounded custom-card">
+                    <img src="image/tree-736881_640.jpg" class="card-img-top object-fit-cover" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
@@ -125,7 +126,7 @@ if (isset($_SESSION['user'])) {
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card shadow p-3 mb-5 bg-body-tertiary rounded custom-card">
                     <img src="image/A-clear-image-of-a-woman-wearing-red-sharpened-by-Fotors-image-sharpener.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
@@ -133,7 +134,7 @@ if (isset($_SESSION['user'])) {
                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card shadow p-3 mb-5 bg-body-tertiary rounded custom-card">
                     <img src="image/free-images.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
